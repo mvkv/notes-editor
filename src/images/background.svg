@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-Web_1920_1">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
+    <rect width="1920" height="1080" fill="#5465ff"/>
+    <g id="Raggruppa_1" data-name="Raggruppa 1" transform="translate(-23.967 -284.593)">
+      <path id="Tracciato_1" data-name="Tracciato 1" d="M931.759-22.1C1339.069-22.1,1475,330.19,1475,737.5S1144.81,1475,737.5,1475-615.267,1396.892-615.267,989.582,524.449-22.1,931.759-22.1Z" transform="translate(1005.967 369.593)" fill="rgba(93,255,236,0.21)"/>
+      <path id="Tracciato_2" data-name="Tracciato 2" d="M623.905-160.727C858.35-160.727,849,190.055,849,424.5S658.945,849,424.5,849s-733.557,62.155-733.557-172.29S389.46-160.727,623.905-160.727Z" transform="translate(1318.968 682.593)" fill="#5465fa"/>
+      <path id="Tracciato_3" data-name="Tracciato 3" d="M518.972-183.074C792.4-246.474,644,144.164,644,322S499.836,644,322,644-14.583,916.416.986,575.648,245.547-119.673,518.972-183.074Z" transform="translate(1422.968 786.593)" fill="rgba(93,255,236,0.21)"/>
+    </g>
+  </g>
+</svg>

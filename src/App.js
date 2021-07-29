@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar';
+import { useAuth0 } from '@auth0/auth0-react';
+import Loading from './components/Loading';
+import { Switch, Route } from 'react-router';
+import Home from './components/Home';
+import Notes from './components/notes/Notes'
+import ProtectedRoute from './components/auth/ProtectedRoute';
+
+import globalStyles from "./css/App.module.css"
 
 function App() {
+  const { isLoading } = useAuth0();
+
+  if (isLoading) {
+    return (
+    <div className={globalStyles.App}>
+      <Navbar />
+      <Loading />
+    </div>
+    );
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={globalStyles.App}>
+      <Navbar/>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <ProtectedRoute path="/notes" component={Notes} />
+      </Switch>
     </div>
   );
 }
